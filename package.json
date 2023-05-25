@@ -10,7 +10,8 @@
     "seed:contentful": "dotenv-run-script .env -- import:contentful",
     "seed": "medusa seed -f ./data/seed.json",
     "build": "babel src -d dist --extensions \".ts,.js\"",
-    "start": "medusa develop"
+    "dev": "medusa develop",
+    "start": "medusa start"
   },
   "dependencies": {
     "@medusajs/admin": "^5.0.0",
