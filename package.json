@@ -1,8 +1,8 @@
 {
-  "name": "medusa-hygraph-pim",
+  "name": "medusa-starter-contentful",
   "version": "0.0.1",
-  "description": "A PIM catcher for hygraph.",
-  "author": "Jesus Cervantes <jesus.cervarl@gmail.com>",
+  "description": "A starter for Medusa projects.",
+  "author": "Sebastian Rindom <skrindom@gmail.com>",
   "license": "MIT",
   "scripts": {
     "clean": "cross-env ./node_modules/.bin/rimraf dist",
@@ -27,7 +27,6 @@
     "medusa-payment-manual": "^1.0.23",
     "medusa-payment-stripe": "^5.0.0",
     "medusa-plugin-contentful": "github:Horizon-Trade/medusa-contentful-cms",
-    "medusa-starter-default": "github:CervarlCG/hygraph-pim",
     "mongoose": "^5.13.3",
     "typeorm": "^0.3.16"
   },
