@@ -27,6 +27,7 @@ const CONTENTFUL_ENV = process.env.CONTENTFUL_ENV || "";
 const plugins = [
   `medusa-fulfillment-manual`,
   `medusa-payment-manual`,
+  "medusa-hygraph-pim",
   {
     resolve: `medusa-plugin-contentful`,
     options: {
