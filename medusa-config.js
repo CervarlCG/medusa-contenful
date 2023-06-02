@@ -27,13 +27,11 @@ const CONTENTFUL_ENV = process.env.CONTENTFUL_ENV || "";
 const plugins = [
   `medusa-fulfillment-manual`,
   `medusa-payment-manual`,
-  "medusa-hygraph-pim",
   {
-    resolve: `medusa-plugin-contentful`,
+    resolve: "medusa-hygraph-pim",
     options: {
-      space_id: CONTENTFUL_SPACE_ID,
-      access_token: CONTENTFUL_ACCESS_TOKEN,
-      environment: CONTENTFUL_ENV,
+      apiUrl: process.env.HYGRAPH_URL,
+      apiAuthorization: process.env.HYGRAPH_TOKEN,
     },
   },
   {
