@@ -54,14 +54,6 @@ const plugins = [
       webhook_secret: STRIPE_WEBHOOK_SECRET,
     },
   },
-  {
-    resolve: "medusa-payment-usio",
-    options: {
-      merchantKey: "M_KEY",
-      apiUsername: "API_USER",
-      apiPassword: "API_PASSWORD",
-    },
-  },
 ];
 
 if (process.env.NODE_ENV !== "production") plugins.push("@medusajs/file-local");

@@ -31,7 +31,6 @@
     "medusa-payment-manual": "^1.0.23",
     "medusa-payment-paypal": "^6.0.0",
     "medusa-payment-stripe": "^6.0.0",
-    "medusa-payment-usio": "file:../usio-payment",
     "medusa-plugin-contentful": "github:Horizon-Trade/medusa-contentful-cms",
     "mongoose": "^5.13.3",
     "typeorm": "^0.3.16",
