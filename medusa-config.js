@@ -30,7 +30,6 @@ const plugins = [
   `medusa-fulfillment-manual`,
   `medusa-payment-manual`,
   `medusa-payment-paypal`,
-  process.env.NODE_ENV !== "production" ? `@medusajs/file-local` : "",
   {
     resolve: "medusa-hygraph-pim",
     options: {
@@ -64,6 +63,8 @@ const plugins = [
     },
   },
 ];
+
+if (process.env.NODE_ENV !== "production") plugins.push("@medusajs/file-local");
 
 module.exports = {
   projectConfig: {
