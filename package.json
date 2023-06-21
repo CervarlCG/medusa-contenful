@@ -33,8 +33,7 @@
     "medusa-payment-stripe": "^6.0.0",
     "medusa-plugin-contentful": "github:Horizon-Trade/medusa-contentful-cms",
     "mongoose": "^5.13.3",
-    "typeorm": "^0.3.16",
-    "usio-payment-provider": "file:../usio-payment"
+    "typeorm": "^0.3.16"
   },
   "repository": "https://github.com/medusajs/medusa-starter-contentful.git",
   "keywords": [
