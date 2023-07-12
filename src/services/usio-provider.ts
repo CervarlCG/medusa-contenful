@@ -117,6 +117,15 @@ class USIOProviderService extends AbstractPaymentProcessor {
   ): Promise<void | PaymentProcessorError | PaymentProcessorSessionResponse> {
     return { session_data: context.paymentSessionData };
   }
+
+  async updatePaymentData(
+    sessionId: string,
+    data: Record<string, unknown>
+  ): Promise<
+    PaymentProcessorError | PaymentProcessorSessionResponse["session_data"]
+  > {
+    return data;
+  }
 }
 
 export default USIOProviderService;
